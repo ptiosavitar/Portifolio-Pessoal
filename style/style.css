@@ -1,6 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Boldonse&family=Krona+One&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
 
-
 :root {
     --cor-principal: #570abf;
     --cor-segundaria: #340672;
@@ -11,28 +10,24 @@
     --font-tercearia: 'Boldonse', sans-serif;
 }
 
-*{
+* {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-    background-color: black;
+    background-color: var(--cor-tercearia);
     text-decoration: none;
-
 }
 
 body {
     box-sizing: border-box;
-    color: var(--cor-texto);
-    
+    color: var(--cor-tercearia);
 }
+
 .navbar-container {
     position: fixed;
-    top: 0;
     width: 100%;
-    background-color: white;
-    color: black;
-    z-index: 1000;
-    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    background-color: var(--cor-texto);
+    color: var(--cor-tercearia);
 }
 
 .navbar a {
@@ -48,25 +43,28 @@ body {
 
 .navbar a:hover {
     transform: scale(0.9);
+    transition: transform 0.3s ease;
 }
-.header{
-  padding: 2% 0% 0% 5%;
-  border: 0.5px solid var(--cor-s);
-}
+
+
+
 .header {
+    padding: 2% 0% 0% 5%;
     display: flex;
     justify-content: flex-end;
     align-items: center;
     padding: 2% 5% 0% 0%;
 }
 
+
+
 .navbar {
-    gap: 5vw;
+    gap: 5rem;
     display: flex;
     flex-direction: row;
 }
 
-.sobre_min{
+.sobre_min {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -74,13 +72,13 @@ body {
     font-family: var(--font-secundaria);
     color: var(--cor-texto);
     flex-direction: row;
-    max-width: 1000px; 
-    margin: 0 auto; 
+    max-width: 1000px;
+    margin: 0 auto;
 }
 
-.sobre_min_principal{
+.sobre_min_principal {
     font-family: var(--font-secundaria);
-    font-size: 2.2em; 
+    font-size: 2.2em;
     font-weight: bold;
     text-transform: uppercase;
     color: var(--cor-texto);
@@ -91,20 +89,20 @@ body {
     text-align: center;
 }
 
-.sobre_min_cargo{
-    font-size: 1.4em; 
+.sobre_min_cargo {
+    font-size: 1.4em;
     color: var(--cor-texto);
     background-color: var(--cor-segundaria);
-    padding: 0.5rem 1rem; 
+    padding: 0.5rem 1rem;
     border-radius: 5px;
 }
 
-.sobre_min_descricao{
-    font-size: 1em; 
-line-height: 1.6;
+.sobre_min_descricao {
+    font-size: 1em;
+    line-height: 1.6;
     color: var(--cor-texto);
     text-align: justify;
-margin-left: 2rem; /* Cria o efeito de escadinha maior */
+    margin-left: 2rem;
 }
 
 .img_dono {
@@ -114,13 +112,50 @@ margin-left: 2rem; /* Cria o efeito de escadinha maior */
     justify-content: center;
     align-items: center;
     text-align: center;
-    border-radius: 2% ;
-    color: var (--cor-texto);
+    border-radius: 2%;
+    color: var(--cor-texto);
 }
 
 .sobre_min_texto {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: baseline
+    align-items: baseline;
 }
+
+.info_about {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8rem;
+    padding: 7rem 0;
+    font-family: var(--font-secundaria);
+    color: var(--cor-texto);
+    flex-direction: row;
+    max-width: 1000px;
+    margin: 0 auto;
+    text-decoration: none;
+}
+
+.info_about_btn {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 12rem;
+    height: 6rem;
+  
+    color: #ffffff;
+    font-family: var(--font-secundaria);
+    border-radius: 30px;
+    border: 2px solid #ffffff;
+}
+
+.info_about_number {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #a259ff;
+}
+
+/*@media
