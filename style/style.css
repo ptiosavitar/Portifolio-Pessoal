@@ -8,7 +8,14 @@
     --font-principal: 'Roboto', sans-serif;
     --font-secundaria: 'Krona One', sans-serif;
     --font-tercearia: 'Boldonse', sans-serif;
+    --cor-logo-clara: #8b5cf6;     
+    --cor-logo-hover: #c084fc;     
+    --cor-logo-secundaria: #6d28d9; 
 }
+
+html {
+    scroll-behavior: smooth;
+  }
 
 * {
     box-sizing: border-box;
@@ -103,6 +110,7 @@ body {
     color: var(--cor-texto);
     text-align: justify;
     margin-left: 2rem;
+    
 }
 
 .img_dono {
@@ -123,12 +131,14 @@ body {
     align-items: baseline;
 }
 
+
 .info_about {
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
     align-items: center;
-    gap: 8rem;
+    gap: 2rem;
     padding: 7rem 0;
+    font-family: var(--font-secundaria);
     font-family: var(--font-secundaria);
     color: var(--cor-texto);
     flex-direction: row;
@@ -143,12 +153,11 @@ body {
     justify-content: center;
     align-items: center;
     text-align: center;
-    width: 12rem;
+    width: 20rem;
     height: 6rem;
-  
     color: #ffffff;
     font-family: var(--font-secundaria);
-    border-radius: 30px;
+    border-radius: 1rem;
     border: 2px solid #ffffff;
 }
 
@@ -157,5 +166,69 @@ body {
     font-weight: bold;
     color: #a259ff;
 }
+
+.skills_title{
+    font-family: var(--font-tercearia);
+    font-size: 2.2em;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: var(--cor-texto);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.skills_container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 4rem;
+    padding: 7rem 0;
+    flex-direction: row;
+    margin: 0 auto;
+    text-align: center;
+    text-decoration:  none;
+
+}
+
+.skills_title {
+    font-family: var(--font-tercearia);
+    font-size: 2.2em;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: var(--cor-texto);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.skills_title:hover {  
+    transform: scale(1.2) 
+}
+
+
+.skills_item{
+border: 0.2rem solid var(--cor-texto);
+border-radius: 5%;
+padding: 2%;
+
+}
+
+.skills_item:hover{
+   cursor: pointer;
+    transform: scale(1.05);
+}
+
+.skills_text{
+    color: var(--cor-texto);
+    font-family: var(--font-secundaria);
+}
+
+
 
 /*@media
